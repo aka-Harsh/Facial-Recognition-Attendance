@@ -40,7 +40,6 @@ else:
             cv2.putText(frame, name, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
 
         FRAME_WINDOW.image(frame)
-
         # Update attendance
         attendance_df = update_attendance(attendance_df, recognized_names)
         save_attendance(attendance_df, ATTENDANCE_CSV)
