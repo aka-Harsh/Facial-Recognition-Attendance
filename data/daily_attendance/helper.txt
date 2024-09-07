@@ -1,0 +1,4 @@
+1. This folder will contain .csv files of daily attendance.
+2. This .csv files would be generated when the app.py is launched.
+
+For more information check the Readme.md file of this repository
