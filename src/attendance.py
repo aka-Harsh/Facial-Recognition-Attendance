@@ -1,8 +1,21 @@
 import pandas as pd
 from datetime import datetime
 
-def load_attendance(csv_path):
-    return pd.read_csv(csv_path)
+def load_base_attendance():
+    if not os.path.exists(BASE_CSV_PATH):
+        initialize_base_attendance()
+    return pd.read_csv(BASE_CSV_PATH)
+
+def load_daily_attendance(date):
+    os.makedirs(ATTENDANCE_DIR, exist_ok=True)
+    daily_csv_path = os.path.join(ATTENDANCE_DIR, f'attendance_{date}.csv')
+    if not os.path.exists(daily_csv_path):
+        base_df = load_base_attendance()
+        base_df['Date'] = date
+        base_df['Status'] = 'Absent'
+        base_df['Last Seen'] = ''
+        base_df.to_csv(daily_csv_path, index=False)
+    return pd.read_csv(daily_csv_path)
 
 def update_attendance(df, recognized_names):
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

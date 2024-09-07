@@ -8,16 +8,24 @@ from src.attendance import load_daily_attendance, update_attendance, save_daily_
 IMAGES_PATH = 'data/images'
 ATTENDANCE_CSV = 'data/attendance.csv'
 
-# Load known faces and attendance data
-known_faces, known_names = load_known_faces(IMAGES_PATH)
-attendance_df = load_attendance(ATTENDANCE_CSV)
+# Constants
+IMAGES_PATH = 'data/images'
+ATTENDANCE_DIR = 'data/daily_attendance'
+
+# Load known faces
+known_faces, known_ids = load_known_faces(IMAGES_PATH)
 
 st.title("Facial Recognition Attendance System")
 
 # Sidebar
 st.sidebar.header("Options")
+selected_date = st.sidebar.date_input("Select Date", date.today())
 show_attendance = st.sidebar.checkbox("Show Attendance")
 
+# Debug information
+st.sidebar.subheader("Debug Info")
+st.sidebar.write(f"Number of known faces: {len(known_faces)}")
+st.sidebar.write(f"Known IDs: {', '.join(known_ids)}")
 # Main content
 if show_attendance:
     st.subheader("Current Attendance")
