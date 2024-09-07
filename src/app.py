@@ -46,3 +46,8 @@ else:
         save_attendance(attendance_df, ATTENDANCE_CSV)
 
     camera.release()
+
+st.sidebar.subheader("Attendance Summary")
+st.sidebar.write(f"Total Students: {len(attendance_df)}")
+st.sidebar.write(f"Present: {(attendance_df['Status'] == 'Present').sum()}")
+st.sidebar.write(f"Absent: {(attendance_df['Status'] == 'Absent').sum()}")
