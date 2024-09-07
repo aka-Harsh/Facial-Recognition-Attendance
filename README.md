@@ -1,6 +1,6 @@
 # Facial Recognition Attendance System
 
-🛠️ This project generates a personalized fitness plan tailored to your specific fitness goals, dietary preferences, and more, utilizing the Gemini-1.5-Flash LLM model.<br>
+🛠️ This project utilizes OpenCV and the Python library **(face_recognition)** to update attendance based on individual facial features. Additionally, it generates a daily attendance record in a .csv file. <br>
 <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
 <img width="12" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
