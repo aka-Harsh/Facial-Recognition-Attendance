@@ -11,34 +11,34 @@
 
 ## Video Demo
 
-🎥 Here you can find a video of the working project
+🎥 Here you can find a video of the working project.
 
 https://github.com/user-attachments/assets/cab003e3-a35c-4c28-99a7-d157996abdfc
 
 ## Deployment
 
-To run this project first clone this repository using
+To run this project first clone this repository using:
 
 ```bash
   git clone https://github.com/aka-Harsh/Facial-Recognition-Attendance.git
 ```
 
-Save this repository in your system and access it, then create and activate a virtual environment
+Save this repository in your system and access it, then create and activate a virtual environment:
 ```bash
   python -m venv venv
   venv\Scripts\activate
 ```
 
-Install all the required packages 
+Install all the required packages:
 ```bash
   pip install -r requirements.txt
 ```
 
-Finally run the app.py file
+Finally run the app.py file:
 ```bash
   streamlit run src/app.py
 ```
-Give your webpage camera access in order to run
+Give your webpage camera access in order to run.
 
 ## Project Outlook
 
