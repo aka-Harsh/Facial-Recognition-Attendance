@@ -5,7 +5,7 @@
 <img width="12" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
 <img width="12" />
-<img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" height="26" alt="vscode logo"  />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZslNSk4pgYd4cvWIY35bE9Hol5OvaL_xTvw&s" height="30" alt="vscode logo"  />
 <img width="12" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/1200px-Microsoft_Excel_2013-2019_logo.svg.png" height="30" alt="vscode logo"  />
 
